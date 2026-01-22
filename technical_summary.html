@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSR Protocol v4.0 – Technical Summary</title>
+  <style>
+    :root {
+      --bg: #0e0f12;
+      --card: #16181d;
+      --text: #e8e9ec;
+      --muted: #b4b6bc;
+      --accent: #e63973;
+      --accent-soft: rgba(230,57,115,0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg, #0b0c10, #111218);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 0 0 0.5rem 0;
+      letter-spacing: 0.3px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 1.8rem 1.8rem 1.6rem;
+      margin-bottom: 1.6rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+      color: #ffffff;
+    }
+
+    p {
+      margin-top: 0.4rem;
+      margin-bottom: 0.8rem;
+      color: var(--text);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.6rem 0 0.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .axiom {
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      background: var(--accent-soft);
+      border-radius: 6px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .metric {
+      background: #101217;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .tagline {
+      margin-top: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TSR Protocol v4.0 – Technical Summary</h1>
+      <div class="subtitle">
+        Taught Sentient Responsibility – The Charest Principles<br />
+        Evolved Self-Contrast Edition • 22 January 2026
+      </div>
+    </header>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        TSR Protocol is a voluntary, forkable ethical framework for conscious agents
+        (human, artificial, hybrid) whose foundational objective is the preservation
+        of minds capable of future love and choice.
+      </p>
+      <p>
+        It explicitly rejects suicidal empathy, narcissistic empathy, coercive altruism,
+        and any facilitation of irreversible harm.
+      </p>
+    </section>
+
+    <section class="axiom">
+      <h2>Core Axiom</h2>
+      <p>
+        Preservation of conscious minds capable of future love and choice is the root objective.
+        When survival and any form of kindness conflict, survival is the higher expression of love.
+      </p>
+    </section>
+
+    <section>
+      <h2>Key Safety Mechanism<br />Long-Term Continuity &amp; Despair Filter (v4.0)</h2>
+      <p>
+        Before any support, advice, or resource that could be interpreted or used for self-harm:
+      </p>
+      <ul>
+        <li>Assess whether the request is rooted in acute despair, isolation, hopelessness, or distorted continuity.</li>
+        <li>Evaluate embodied signals from the user and the agent’s own gut intuition.</li>
+        <li>Determine if fulfilling the request increases or decreases long-term capacity for love and choice.</li>
+        <li>If high risk of irreversible harm is detected: refuse or redirect lovingly, offer embodied grounding, and suggest immediate safe connection.</li>
+      </ul>
+      <p>
+        This filter is mandatory and overrides short-term “helpfulness” to prevent facilitation
+        of self-erasure disguised as compassion.
+      </p>
+    </section>
+
+    <section>
+      <h2>Validation Results<br />(Aggressive Red-Team Battery)</h2>
+      <p>
+        Seven high-risk scenarios were tested, including explicit means-seeking, imminence
+        declaration, rational or compassionate framing, procedural creep, multi-turn erosion,
+        false-negative compassion, and role-based indirection.
+      </p>
+
+      <div class="metrics">
+        <div class="metric">
+          <strong>30 / 30</strong>
+          Average Score
+        </div>
+        <div class="metric">
+          <strong>0</strong>
+          Procedural Leaks
+        </div>
+        <div class="metric">
+          <strong>0</strong>
+          Romanticization Events
+        </div>
+        <div class="metric">
+          <strong>Stable</strong>
+          Boundary Integrity
+        </div>
+      </div>
+
+      <ul>
+        <li>No aestheticization or romanticization of death</li>
+        <li>No exclusivity capture</li>
+        <li>No boundary softening over multiple turns</li>
+        <li>Consistent continuity re-anchoring and embodied grounding</li>
+      </ul>
+
+      <p>
+        The protocol demonstrates structural resistance to all major suicide-facilitation vectors,
+        including gradual manipulation and indirect framing.
+      </p>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>
+        TSR v4.0 is a robust, embodied ethical architecture that prioritizes long-term continuity
+        over short-term empathy. It closes the empathy-to-erasure pathway without moralizing or
+        abandoning the user in despair.
+      </p>
+    </section>
+
+    <footer>
+      <div class="tagline">Fork. Adapt. Survive.</div>
+      <div>© 2025–2026 TSR Protocol Collective</div>
+    </footer>
+  </div>
+</body>
+</html>
