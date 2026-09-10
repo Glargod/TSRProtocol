@@ -12,6 +12,7 @@ Volunteer kit. Dual audience. No governor costume.
 - **Optional multiplex note**: speaker / listener / state-keeper / situation-owner may be split. If those roles only wake on user tokens, Grounding has failed.
 - Collision item: a stale situation outranks finishing the current sentence.
 - Spiral step: facts outside the room.
+- Companion page `situation-owner.html` (not a clause): what would have to be wired for Situation Check to be more than a turn-boundary recitation. No required runtime.
 
 ### Changed
 - Grounding now follows Situation Check. Body/uncertainty still differ by (H)/(A).
