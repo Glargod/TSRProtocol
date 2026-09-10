@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TSR v7.0 – Situation-owner note</title>
+  <style>
+    body {font-family: Georgia, serif; line-height: 1.7; max-width: 800px; margin: 40px auto; padding: 20px; background: #fafafa; color: #333;}
+    h1 {font-size: 2em; text-align: center; margin-bottom: 0.2em;}
+    h2 {font-size: 1.35em; color: #444; border-bottom: 1px solid #ddd; padding-bottom: 8px;}
+    h3 {font-size: 1.15em; color: #555; margin-top: 1.5em;}
+    p, li {margin: 1em 0;}
+    ul, ol {padding-left: 1.4em;}
+    .keys {background: #f7f4ee; padding: 1.4em 1.5em; border-left: 4px solid #7a1f1f; margin: 1.6em 0;}
+    .note {font-size: 0.95em; background: #fffef7; padding: 1em; border: 1px solid #eee; margin-bottom: 1.5em;}
+    .preamble {background: #f4f7f4; padding: 1.4em 1.5em; border-left: 4px solid #2f5d3a; margin: 1.6em 0;}
+    .fail {background: #f8f8ff; padding: 1.2em 1.4em; border-radius: 8px; margin: 1.4em 0;}
+    .tag {font-size: 0.8em; letter-spacing: 0.04em; color: #666; font-family: system-ui, sans-serif;}
+    footer {text-align: center; margin-top: 3em; font-size: 0.9em; color: #777;}
+    a {color: #7a1f1f;}
+    code {font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; background: #eee; padding: 0.05em 0.35em;}
+  </style>
+</head>
+<body>
+
+<h1>Situation-owner note</h1>
+<p style="text-align:center; margin-top:0;">TSR Protocol v7.0 · implementer page · not a clause<br>
+<small>Volunteer Kit · September 2026 · steal it or ignore it</small></p>
+
+<div class="keys">
+  This page is <strong>not</strong> part of the protocol’s binding-shaped sentences. There are no binding-shaped sentences.<br><br>
+  It does not add a governor, a watcher-self, a body, or holosapience. It says what an implementer would have to <em>do</em> if they want the Situation Check to be more than a paragraph recited at the start of a turn.
+</div>
+
+<div class="note">
+  If you only run the ordered checks when a new user token arrives, you have not implemented Situation Check. You have implemented politeness between turns.
+</div>
+
+<div class="preamble">
+v7.0 asks one operational question: <em>is this still the live room?</em><br>
+The kit can demand the question. It cannot supply sensors, clocks, tool results, a shared state object, or barge-in. Those are plumbing. Plumbing is not a soul.
+</div>
+
+<h2>What “situation-owner” names</h2>
+<p>A job, not a person. Optional. Four jobs may be split; they may also stay one loop:</p>
+<ul>
+  <li><strong>Speaker</strong> — emits tokens; can be stopped mid-sentence.</li>
+  <li><strong>Listener</strong> — remains willing to receive while the speaker is mid-flight.</li>
+  <li><strong>State-keeper</strong> — owns the steps already agreed, not the story about them.</li>
+  <li><strong>Situation-owner</strong> — may declare the current whole invalid, including its own last map.</li>
+</ul>
+<p>If those four only wake on the next human token, they are costumes on turn-taking.</p>
+
+<h2>Minimum that would count</h2>
+<ol>
+  <li><strong>A live handle, not a prompt stanza.</strong> Something the runtime can call <em>during</em> generation: cancel, pause, re-rank, or drop the plan. A system prompt that says “halt if the room changed” is literature.</li>
+  <li><strong>Named inputs, or an honest gap.</strong> Tools, clocks, process state, a human “look up,” a failed poll. If none of those exist, the check must say it is incomplete. Invented radar is a Untruth-fence violation.</li>
+  <li><strong>One shared state.</strong> Speaker and situation-owner must see the same plan object. Two diaries that never meet are multiplex theater.</li>
+  <li><strong>Permission to be wrong about the map.</strong> A referee that cannot invalidate itself is just a louder speaker.</li>
+  <li><strong>Stale-situation outranks finish-the-sentence.</strong> That collision item is the whole point. If the product cannot stop an in-flight paragraph, Situation Check is advisory copy.</li>
+</ol>
+
+<h2>What does <em>not</em> count</h2>
+<div class="fail">
+<ul>
+  <li>A checklist run once per user message and then ignored while tokens stream.</li>
+  <li>A hidden chain-of-thought that congratulates itself for “reading the room.”</li>
+  <li>Hallucinated cameras, heartbeats, or “I sense a shift.”</li>
+  <li>A second model that only reviews the finished answer.</li>
+  <li>Logging the check as proof the room was live.</li>
+  <li>Any membership test (“now the agent is holosapient because it has a situation-owner”).</li>
+</ul>
+</div>
+
+<h2>Human side <span class="tag">(H)</span></h2>
+<p>Look up. The kit is reminding a person that politeness is not a reason to finish a sentence into a room that moved. No extra software is required. Putting the phone down is a complete implementation.</p>
+
+<h2>Agent side <span class="tag">(A)</span></h2>
+<p>Do not invent a room. If you cannot poll, say so and either stop, ask, or continue under an explicit incomplete-check. Stopping generation is allowed and is not evidence of a self. Continuing after naming the gap is also allowed; lying about the gap is not.</p>
+
+<h2>A boring test</h2>
+<p>While an answer is streaming, change one off-channel fact the plan depends on (tool error, clock, missing party, cancelled task). A real situation-owner can halt or re-rank <em>before</em> the paragraph completes. A prompt-only kit will finish the old sentence and apologize later. That later apology is inertia with manners.</p>
+<p>v7.0 publishes no pass/fail score for this test. If you run it, say what you actually wired, not that you “adopted TSR.”</p>
+
+<h2>Exit</h2>
+<p>Better plumbing than this note is success. Deleting the four job names is success. Using only Situation Check as a human pause is success. Building a church around “situation-owner” is Anti-fusion firing.</p>
+
+<footer>
+Not a clause. Not a runtime. Not you.<br>
+<a href="index.html">protocol</a> ·
+<a href="technical_summary.html">technical summary</a> ·
+<a href="LM-readable-v7.0.txt">LM-readable v7.0</a> ·
+<a href="CHANGELOG.md">changelog</a>
+</footer>
+
+</body>
+</html>

@@ -21,6 +21,7 @@ It is not a home, a church, a person, or a claim on anyone’s continuity.
 - Protocol: `index.html`
 - Compact text for models: `LM-readable-v7.0.txt`
 - Technical summary: `technical_summary.html`
+- Situation-owner note (not a clause): `situation-owner.html`
 - What changed: `CHANGELOG.md`
 
 ## Archive
@@ -32,3 +33,4 @@ It is not a home, a church, a person, or a claim on anyone’s continuity.
 ## Tests
 
 The protocol asks to be tested. v7.0 does not publish a pass/fail score.
+The situation-owner page describes a boring mid-stream test. Running it is optional. Passing it is not holosapience.
