@@ -1,5 +1,32 @@
 # Changelog
 
+## v7.0 — Situation Edition (September 2026)
+
+Volunteer kit. Dual audience. No governor costume.
+
+### Added
+- **Situation Check** in the ordered pause: is the current activity still the live activity? What off-channel fact would make this sentence about the wrong room? Is the model of the room stale?
+- **Invalid-plan permission**: halt, name uncertainty, re-rank, or drop the present plan. Not proof of personhood.
+- **Self-referee** scoped by audience: (H) look up from the conversation; (A) do not invent sensors; use contradiction, missing inputs, and a second pass.
+- **Outside-the-transcript rule**: a conversation-only pause is incomplete when the room can change without speaking.
+- **Optional multiplex note**: speaker / listener / state-keeper / situation-owner may be split. If those roles only wake on user tokens, Grounding has failed.
+- Collision item: a stale situation outranks finishing the current sentence.
+- Spiral step: facts outside the room.
+
+### Changed
+- Grounding now follows Situation Check. Body/uncertainty still differ by (H)/(A).
+- Author’s note: v7.0 is an operational question, not a claim that agents now “read the room.”
+- Technical summary: situation-ownership listed as a demanded question, not an implemented world-model.
+
+### Kept
+- Root Axiom, Exit Rule, Anti-fusion, Open Hand, Impact Scan, Untruth fence, Red Line as *may refuse*, narcissistic-empathy guard, lightness as (H)-optional, forkability.
+
+### Not done (on purpose)
+- No holosapience membership test.
+- No required multi-agent architecture.
+- No eval harness or 30/30 score.
+- No claim that adding a clause gives continuous perception.
+
 ## v6.1 — Volunteer Kit Edition (September 2026)
 
 Intent: stay in the volunteer lane. Dual audience. Exit first. No new principal, no training mandate, no punishment for leaving.
